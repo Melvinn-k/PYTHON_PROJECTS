@@ -1,0 +1,48 @@
+#Exercise 1 — String Slicing
+#Ask the user for their full name:
+#print the first 3 letters
+#print the last 3 letters.
+#print everything from index 2 to the end
+full_name = input("Enter your full name: ") 
+print(full_name[0:3]) 
+print(full_name[-3:])
+print(full_name[2:]) 
+
+#Exercise 2 — String Cleanup
+#Given a user input that may have extra spaces:
+#remove spaces
+#convert to lowercase
+#print cleaned value using an f-string
+president = input("Enter the president's name: ")
+print(president)
+cleaned = president.strip().lower()
+print(f"The president of Kenya is {cleaned}")
+
+#Exercise 3 — List Editing
+#Create a list of 5 foods. Then:
+#replace the 3rd item
+#remove the last item
+#add one new food using append
+#print the final list + type
+food_items = ["rice" , "chicken", "chapati", "ugali", "cabbage"]
+print(food_items)
+food_items[2] = "fish"
+print(food_items)
+food_items.pop()
+print(food_items)
+food_items.append("beef")
+print(food_items)
+print(food_items, type(food_items))
+
+#Exercise 4 — User Profile
+#Ask the user:
+#name (string)
+#age (string → convert to int)
+#height (string → convert to float)
+#Print with an f-string and show the data type of each.
+name = input("Enter your name: ")
+age =int(input("Enter your age: "))
+height = float(input("Enter your height: "))
+print(f"My name is {name}, I am {age} years old and my height is {height} cm.")
+print(type(name), type(age), type(height))
+
